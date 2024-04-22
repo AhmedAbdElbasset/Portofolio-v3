@@ -2,7 +2,7 @@ import React from 'react'
 
 const Resmue = () => {
   return (
-    <div id='Resmue' className=' bg-[url(../assets/Resmue.jpg)] w-full h-[160%] md:w-full md:h-full bg-cover bg-no-repeat after:absolute after:w-[145%] after:h-[160%] after:md:w-full md:after:h-full after:bg-black after:opacity-[0.9] after:z-0 '>
+    <div id='Resmue' className=' bg-[url(../../public/assets/Resmue.jpg)] w-full h-[160%] md:w-full md:h-full bg-cover bg-no-repeat after:absolute after:w-[145%] after:h-[160%] after:md:w-full md:after:h-full after:bg-black after:opacity-[0.9] after:z-0 '>
         <div className='pt-[80px] absolute w-full z-10'>
             <div className='container'>
                 <div className=' flex flex-col  sm:justify-between lg:justify-around sm:flex-row w-full h-full items-center'>
@@ -11,27 +11,27 @@ const Resmue = () => {
                         <span className='main'/>
                         <div className=' relative left-[10%]  mt-[20px]'>
                             <div className='flex mt-[10px]'>
-                                <img src="../assets/icons8-html-100.png" alt="" className='small'/>
+                                <img src="../../public/assets/icons8-html-100.png" alt="" className='small'/>
                                 <p className='text-[15px] font-normal relative top-[10px] left-[5%] after:w-[160px] after:relative after:top-[-4px] after:left-[5%] after:h-[2px] after:inline-block after:bg-white '>HTML</p>
                                 <span className='before:w-[10px] before:h-[10px] before:rounded-[50%] before:flex before:bg-white before:relative before:top-[36%] after:flex after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-[50%] after:relative after:top-[3px] after:left-[-5px] after:border-[1px] border-white' />
                             </div>
                             <div className='flex mt-[20px]'>
-                                <img src="../assets/icons8-css-100.png" alt="" className='small' />
+                                <img src="../../public/assets/icons8-css-100.png" alt="" className='small' />
                                 <p className='text-[15px] font-normal relative top-[10px] left-[5%] after:w-[170px] after:relative after:top-[-4px] after:left-[5%] after:h-[2px] after:inline-block after:bg-white '>Css</p>
                                 <span className='before:w-[10px] before:h-[10px] before:rounded-[50%] before:flex before:bg-white before:relative before:top-[36%] after:flex after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-[50%] after:relative after:top-[3px] after:left-[-5px] after:border-[1px] border-white' />
                             </div>
                             <div className='flex mt-[20px]'>
-                                <img src="../assets/icons8-js-100.png" alt="" className='small' />
+                                <img src="../../public/assets/icons8-js-100.png" alt="" className='small' />
                                 <p className='text-[15px] font-normal relative top-[10px] left-[5%] after:w-[180px] after:relative after:top-[-4px] after:left-[5%] after:h-[2px] after:inline-block after:bg-white '>Js</p>
                                 <span className='before:w-[10px] before:h-[10px] before:rounded-[50%] before:flex before:bg-white before:relative before:top-[36%] after:flex after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-[50%] after:relative after:top-[3px] after:left-[-5px] after:border-[1px] border-white' />
                             </div>
                             <div className='flex mt-[20px]'>
-                                <img src="../assets/icons8-react-60.png" alt="" className='small'/>
+                                <img src="../../public/assets/icons8-react-60.png" alt="" className='small'/>
                                 <p className='text-[15px] font-normal relative top-[10px] left-[5%] after:w-[160px] after:relative after:top-[-4px] after:left-[5%] after:h-[2px] after:inline-block after:bg-white '>React</p>
                                 <span className='before:w-[10px] before:h-[10px] before:rounded-[50%] before:flex before:bg-white before:relative before:top-[36%] after:flex after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-[50%] after:relative after:top-[3px] after:left-[-5px] after:border-[1px] border-white' />
                             </div>
                             <div className='flex mt-[20px]'>
-                                <img src="..\assets\icons8-tailwind-css-96.png" className='small' />
+                                <img src="../../public/assets\icons8-tailwind-css-96.png" className='small' />
                                 <p className='text-[15px] font-normal relative top-[10px] left-[5%] after:w-[150px] after:relative after:top-[-4px] after:left-[5%] after:h-[2px] after:inline-block after:bg-white '>Tailwind</p>
                                 <span className='before:w-[10px] before:h-[10px] before:rounded-[50%] before:flex before:bg-white before:relative before:left-[-200%] before:top-[36%] after:flex after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-[50%] after:relative after:top-[3px] after:left-[-225%] after:border-[1px] border-white' />
                             </div>

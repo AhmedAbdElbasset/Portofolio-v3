@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Landing = () => {
   return (
-    <div id="Landing" className="ll bg-[url(../assets/landing.jpg)] w-full h-full md:w-full md:h-full bg-cover text-white mb-[80px]">
+    <div id="Landing" className="ll bg-[url(../../public/assets/landing.jpg)] w-full h-full md:w-full md:h-full bg-cover text-white mb-[80px]">
       <div className="w-full h-full md:w-full md:h-full absolute bg-black opacity-[0.9] sm:opacity-[0.5] z-1" />
       <div className="relative z-[5] top-[30%] px-[5%] capitalize font-light   md:text-[50px] tracking-[2px] ">
         <p>ahmed </p>
