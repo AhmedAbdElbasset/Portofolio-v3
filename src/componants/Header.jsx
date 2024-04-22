@@ -1,10 +1,9 @@
 import { useRef,useEffect } from "react"
 import { NavLink } from "react-router-dom"
 const Header = () => {
-  const headerRef=useRef()
 
   return (
-    <header ref={headerRef} className='transition-all overflow-x-hidden duration-500 relative top-[10px] w-full sm:w-full  z-50 text-white'>
+    <header className='transition-all overflow-x-hidden duration-500 relative top-[10px] w-full sm:w-full  z-50 text-white'>
       
     <div className='container'>
         <ul className='mx-auto w-[80%] sm:w-[50%] flex flex-row justify-between items-center text-[15px] sm:text-[20px] sm:font-semibold '>

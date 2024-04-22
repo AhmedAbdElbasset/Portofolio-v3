@@ -1,9 +1,14 @@
 import Header from "./Header";
 import { motion } from "framer-motion";
+import Insta from '../../public/assets/icons8-instagram-60.png'
+import Git from '../../public/assets/icons8-github-60.png'
+import Linked from '../../public/assets/icons8-linkedin-60.png'
+import Face from '../../public/assets/icons8-facebook-60.png'
+import BackGround from '../../public/assets/landing.jpg'
 
 const Landing = () => {
   return (
-    <div id="Landing" className="ll bg-[url(../../public/assets/landing.jpg)] w-full h-full md:w-full md:h-full bg-cover text-white mb-[80px]">
+    <div id="Landing" className={`"ll bg-[url(${BackGround})] w-full h-full md:w-full md:h-full bg-cover text-white mb-[80px]"`}>
       <div className="w-full h-full md:w-full md:h-full absolute bg-black opacity-[0.9] sm:opacity-[0.5] z-1" />
       <div className="relative z-[5] top-[30%] px-[5%] capitalize font-light   md:text-[50px] tracking-[2px] ">
         <p>ahmed </p>
@@ -23,10 +28,10 @@ const Landing = () => {
         </a >
       </div>
       <motion.div animate={{opacity:1,scale:[1,1.1,1]}} transition={{type:"tween",duration:0.5}} className="flex mx-auto z-30 max-w-max relative top-[52%] md:top-[45%] gap-5 transition-all duration-300 hover:bg-white bg-black px-5 md:px-7 py-2 rounded-md md:rounded-2xl">
-        <a href="https://www.facebook.com/profile.php?id=100008099791606&locale=ar_AR" className=" w-[30px] md:w-[35px] transition-all duration-500 hover:scale-[1.2] hover:drop-shadow-2xl " ><img src="../../public/assets/icons8-facebook-60.png" alt="" /></a>
-        <a href="https://www.instagram.com/" className=" w-[30px] md:w-[35px] transition-all duration-500 hover:scale-[1.2] hover:shadow-2xl"><img src="../../public/assets/icons8-instagram-60.png" alt="" /></a>
-        <a href="https://github.com/AhmedAbdElbasset" className=" w-[30px] md:w-[35px] transition-all duration-500 hover:scale-[1.2] hover:shadow-2xl"><img src="../../public/assets/icons8-github-60.png" alt="" /></a>
-        <a href="https://www.linkedin.com/feed/" className=" w-[30px] md:w-[35px] transition-all duration-500 hover:scale-[1.2] hover:shadow-2xl"><img src="../../public/assets/icons8-linkedin-60.png" alt="" /></a>
+        <a href="https://www.facebook.com/profile.php?id=100008099791606&locale=ar_AR" className=" w-[30px] md:w-[35px] transition-all duration-500 hover:scale-[1.2] hover:drop-shadow-2xl " ><img src={Face} alt="" /></a>
+        <a href="https://www.instagram.com/" className=" w-[30px] md:w-[35px] transition-all duration-500 hover:scale-[1.2] hover:shadow-2xl"><img src={Insta} alt="" /></a>
+        <a href="https://github.com/AhmedAbdElbasset" className=" w-[30px] md:w-[35px] transition-all duration-500 hover:scale-[1.2] hover:shadow-2xl"><img src={Git} alt="" /></a>
+        <a href="https://www.linkedin.com/feed/" className=" w-[30px] md:w-[35px] transition-all duration-500 hover:scale-[1.2] hover:shadow-2xl"><img src={Linked} alt="" /></a>
       </motion.div>
     </div>
   );

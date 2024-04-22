@@ -1,9 +1,13 @@
 import { useState,useRef,useEffect } from "react"
+import Elzero from '../../public/assets/Elzero.png'
+import Dash from '../../public/assets/Dashboard.png'
+import HardROck from '../../public/assets/HardRock.png'
+import Moviex from '../../public/assets/Moviex.png'
 const sliderData=[
     {
         id:1,
         title:'elzero Project',
-        img:'../../public/assets/Elzero.png',
+        img:Elzero,
         link:'https://ahmedabdelbasset.github.io/Elzero/',
         skills:'html css'
 
@@ -11,7 +15,7 @@ const sliderData=[
     {
         id:2,
         title:'elzero dashboared',
-        img:'../../public/assets/Dashboard.png',
+        img:Dash,
         link:' https://ahmedabdelbasset.github.io/Elzero2/',
         skills:'html css'
 
@@ -19,7 +23,7 @@ const sliderData=[
     {
         id:3,
         title:'hard rock store',
-        img:'../../public/assets/HardRock.png',
+        img:HardROck,
         link:'https://ahmedabdelbasset.github.io/Hard-Rock/',
         skills:'html css react'
 
@@ -27,7 +31,7 @@ const sliderData=[
     {
         id:4,
         title:'moviex store',
-        img:'../../public/assets/Moviex.png',
+        img:Moviex,
         link:'https://ahmedabdelbasset.github.io/Moviex/',
         skills:'html css react framer motion'
 

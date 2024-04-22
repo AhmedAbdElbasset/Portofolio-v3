@@ -1,7 +1,8 @@
 import React from 'react'
+import Me from '../../public/assets/Me.jpg'
 const About = () => {
   return (
-    <div id='About' className='container flex flex-wrap pb-[80px]'>
+    <div id='About' className='container flex flex-wrap pb-[80px] mt-[20px]'>
       <div className='relative flex flex-col-reverse sm:flex-row '>
           <div className='text-white relative left-[5%]'>
               <div className='mx-auto w-[40%] sm:w-[30%] '>
@@ -25,7 +26,7 @@ const About = () => {
               </p>
           </div>
         <div className='w-full sm:w-[600px] px-[40px]'>
-          <img src="../../public/assets/Me.jpg" alt=""  className='w-full h-full rounded-md'/>
+          <img src={Me} alt=""  className='w-full h-full rounded-md'/>
         </div>
       </div>
     </div>
