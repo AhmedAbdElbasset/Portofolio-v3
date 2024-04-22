@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#root{
+    height: 100vh;
+    width: 100%;
+}
+body{
+    font-family: "Oswald", sans-serif;
+    overflow-x: hidden;
+    background-color: #090a09;
+    /* background-color: white; */
+}
+*{
+    scroll-behavior: smooth;
+}
+a:hover{
+    color: #2876ad;
+}
+a.red{
+    color: #2876ad;
+    
+}
+button{
+    overflow: hidden;
+}
+
+@layer{
+    .main{
+        @apply  flex w-[200px] left-[10%] h-[2px] bg-main relative 
+    }
+    .small{
+        @apply w-[50px]
+    }
+    .main-p{
+        @apply text-[30px] relative  left-[10%] uppercase text-white
+    }
+    .main-head{
+        @apply inline-block text-[50px] font-bold before:absolute before:h-[2px] before:top-[65px] before:w-[120px] before:inline-block before:bg-main
+    }
+}
+
+.selectingcolor{
+    color: (40,118,173);
+}
