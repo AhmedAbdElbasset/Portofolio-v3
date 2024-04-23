@@ -6,14 +6,14 @@ import Tail from '../../public/assets/icons8-tailwind-css-96.png'
 import react from '../../public/assets/icons8-react-60.png'
 const Resmue = () => {
   return (
-    <div id='Resmue' className=' bg-[url(../../public/assets/Resmue.jpg)] w-full h-[160%] md:w-full md:h-full bg-cover bg-no-repeat after:absolute after:w-[145%] after:h-[160%] after:md:w-full md:after:h-full after:bg-black after:opacity-[0.9] after:z-0 '>
+    <div id='Resmue' className=' bg-resume w-full h-[110%] md:w-full md:h-full bg-cover bg-no-repeat after:absolute after:w-full after:h-[110%] after:md:w-full md:after:h-full after:bg-black after:opacity-[0.9] after:z-0 '>
         <div className='pt-[80px] absolute w-full z-10'>
             <div className='container'>
                 <div className=' flex flex-col  sm:justify-between lg:justify-around sm:flex-row w-full h-full items-center'>
                     <div className=' w-full sm:w-[30%] h-full sm:h-[30%] flex flex-col text-white'>
-                        <p className='main-p'>Software skills</p>
+                        <p className='main-p max-w-max'>Software skills</p>
                         <span className='main'/>
-                        <div className=' relative left-[10%]  mt-[20px]'>
+                        <div className=' relative left-[10%]  mt-[20px] max-w-max'>
                             <div className='flex mt-[10px]'>
                                 <img src={HTML} alt="" className='small'/>
                                 <p className='text-[15px] font-normal relative top-[10px] left-[5%] after:w-[160px] after:relative after:top-[-4px] after:left-[5%] after:h-[2px] after:inline-block after:bg-white '>HTML</p>

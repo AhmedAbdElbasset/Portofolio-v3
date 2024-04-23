@@ -11,7 +11,12 @@ export default {
       },
       colors:{
         main:'#2876ad'
+      },
+      backgroundImage: {
+        'resume': "url('../public/assets/Resmue.jpg')",
+        'landing': "url('../public/assets/landing.jpg')",
       }
+
     },
     screens:{
       sm:'540px',

@@ -11,7 +11,6 @@ const Header = () => {
             <li><a  href="#About" className="transition-all">About</a></li>
             <li><a href="#Resmue" className="transition-all">Resmue</a></li>
             <li><a href="#Portofolio" className="transition-all">Portofolio</a></li>
-            <li><a href="" className="transition-all">Contact</a></li>
         </ul>
     </div>
     </header>

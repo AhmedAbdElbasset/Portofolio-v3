@@ -8,14 +8,14 @@ import BackGround from '../../public/assets/landing.jpg'
 
 const Landing = () => {
   return (
-    <div id="Landing" className={`"ll bg-[url(${BackGround})] w-full h-full md:w-full md:h-full bg-cover text-white mb-[80px]"`}>
-      <div className="w-full h-full md:w-full md:h-full absolute bg-black opacity-[0.9] sm:opacity-[0.5] z-1" />
+    <div id="Landing" className={`" bg-landing w-full h-full md:w-full md:h-full bg-cover text-white mb-[80px]"`}>
+      <div className="w-full h-full md:w-full md:h-full inset-0 absolute bg-black opacity-[0.9] sm:opacity-[0.5] z-1" />
       <div className="relative z-[5] top-[30%] px-[5%] capitalize font-light   md:text-[50px] tracking-[2px] ">
         <p>ahmed </p>
-        <p className="font-black relative text-[60px] top-[-15px]">
+        <p className="font-black relative text-[60px] top-[-15px] max-w-max">
           abdelbasset
         </p>
-        <p className="font-thin tracking-[7px] text-[20px] relative top-[-20px]">
+        <p className="font-thin tracking-[7px] text-[20px] relative top-[-20px] max-w-max">
           frontend devaloper
         </p>
       </div>
