@@ -6,7 +6,7 @@ export default function App() {
   const [load, setLoading] = useState(true);
   window.onload = function () {
     setTimeout(() => {
-      setLoading(pervState=> !pervState);
+      setLoading((pervState) => !pervState);
     }, 1500);
   };
   return (
@@ -32,12 +32,15 @@ export default function App() {
           ".link",
         ]}
       />
-          <div className={`loader ${load?'' :'active'}`}>
-            <div className={`dot-one`}></div>
-            <div className={`dot-two`}>- -</div>
-            <div className={`dot-three`}></div>
-          </div>
-          <HomePage/>
+      {load ? (
+        <div className={`loader ${load ? "" : "active"}`}>
+          <div className={`dot-one`}></div>
+          <div className={`dot-two`}>- -</div>
+          <div className={`dot-three`}></div>
+        </div>
+      ) : (
+        <HomePage />
+      )}
     </>
   );
 }
