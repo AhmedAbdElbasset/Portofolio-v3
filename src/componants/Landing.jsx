@@ -9,7 +9,7 @@ import BackGround from '../../public/assets/landing.jpg'
 const Landing = () => {
   return (
     <div id="Landing" className={`" bg-landing w-full h-full md:w-full md:h-full bg-cover text-white mb-[80px]"`}>
-      <div className="w-full h-[101%] md:w-full md:h-full absolute bg-black opacity-[0.9] sm:opacity-[0.5] z-1" />
+      <div className="w-full h-[105%] md:w-full md:h-full absolute bg-black opacity-[0.9] sm:opacity-[0.5] z-1" />
       <div className="relative z-[5] top-[30%] px-[5%] capitalize font-light   md:text-[50px] tracking-[2px] ">
         <p>ahmed </p>
         <p className="font-black relative text-[60px] top-[-15px] max-w-max">
