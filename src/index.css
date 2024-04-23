@@ -50,6 +50,107 @@ button{
     }
 }
 
-.selectingcolor{
-    color: (40,118,173);
+/* start loader  */
+.loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transition: 2s;
+    position: absolute;
+    left: 0;
+    z-index: 800;
+    background-color: black;
+  }
+  
+.loader.active {
+    left: -1350px;
 }
+  .dot-two {
+    background-color: #2876ad;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 4px;
+    color: white;
+  }
+  
+  .dot-one,
+  .dot-three {
+    background-color: #2876ad;
+    height: 30px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    animation: flap-wings 1s infinite ease-in-out;
+  }
+  
+  .dot-two {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #2876ad;
+    animation: flap-wings 1s infinite ease-in-out;
+    animation-delay: 0.1s;
+  }
+  
+  .dot-two::before,
+  .dot-two::after {
+    content: "";
+    position: absolute;
+    background-color: #2876ad;
+  }
+  
+  .dot-two::before {
+    height: 20px;
+    width: 10px;
+    bottom: 20px;
+    left: 1px;
+    border-radius: 50% 50% 0 0;
+    transform: rotate(-20deg);
+  }
+  
+  .dot-two::after {
+    height: 20px;
+    width: 10px;
+    bottom: 20px;
+    left: 19px;
+    transform: rotate(20deg);
+    border-radius: 50% 50% 0 0;
+  }
+  
+  .dot-one::before,
+  .dot-one::after,
+  .dot-three::before,
+  .dot-three::after {
+    content: "";
+    position: absolute;
+    background-color: #2876ad;
+  }
+  
+  .dot-one::before,
+  .dot-three::before {
+    height: 30px;
+    width: 20px;
+    top: 10px;
+    left: 0;
+    background-color: #e8e8e8;
+   /*chnage this if u need dark mode to #212121 if need light mode #e8e8e8*/
+    border-radius: 50% 50% 0 0;
+  }
+  
+  @keyframes flap-wings {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+/* end loader  */
