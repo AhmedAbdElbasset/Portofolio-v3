@@ -33,7 +33,7 @@ export default function App() {
         ]}
       />
       {load ? (
-        <div className={`loader ${load ? "" : "active"}`}>
+        <div className={`loader `}>
           <div className={`dot-one`}></div>
           <div className={`dot-two`}>- -</div>
           <div className={`dot-three`}></div>
