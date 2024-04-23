@@ -3,12 +3,6 @@ import AnimatedCursor from "react-animated-cursor";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 export default function App() {
-  const [load, setLoading] = useState(true);
-  window.onload = function () {
-    setTimeout(() => {
-      setLoading((pervState) => !pervState);
-    }, 1500);
-  };
   return (
     <>
       <AnimatedCursor
