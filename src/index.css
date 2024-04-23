@@ -25,7 +25,16 @@ a.red{
 button{
     overflow: hidden;
 }
-
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #2876ad;
+    transition: 0.3s;
+    border-radius: 5px;
+  
+  }
+  
 @layer{
     .main{
         @apply  flex w-[200px] left-[10%] h-[2px] bg-main relative 
