@@ -6,7 +6,7 @@ import Tail from '../../public/assets/icons8-tailwind-css-96.png'
 import react from '../../public/assets/icons8-react-60.png'
 const Resmue = () => {
   return (
-    <div id='Resmue' className=' bg-resume w-full h-[110%] md:w-full md:h-full bg-cover bg-no-repeat after:absolute after:w-full after:h-[110%] after:md:w-full md:after:h-full after:bg-black after:opacity-[0.9] after:z-0 '>
+    <div id='Resmue' className=' bg-resume w-full h-[110%] md:w-full md:h-full bg-cover bg-no-repeat after:absolute after:w-full after:h-[111%] after:md:w-full md:after:h-full after:bg-black after:opacity-[0.9] after:z-0 '>
         <div className='pt-[80px] absolute w-full z-10'>
             <div className='container'>
                 <div className=' flex flex-col  sm:justify-between lg:justify-around sm:flex-row w-full h-full items-center'>
