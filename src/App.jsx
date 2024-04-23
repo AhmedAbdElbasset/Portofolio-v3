@@ -6,12 +6,18 @@ export default function App() {
   return (
     <>
       <AnimatedCursor
-        innerSize={8}
-        outerSize={20}
+        innerSize={20}
+        outerSize={40}
         color="255,255,255"
         outerAlpha={0.5}
-        innerScale={0.3}
-        outerScale={5}
+        innerScale={1}
+        outerScale={2}
+        innerStyle={{
+          mixBlendMode:'exclusion'
+        }}
+        outerStyle={{
+          mixBlendMode:'luminosity'
+        }}
         clickables={[
           "a",
           'input[type="text"]',
