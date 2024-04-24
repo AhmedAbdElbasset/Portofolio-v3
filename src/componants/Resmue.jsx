@@ -11,7 +11,6 @@ const Resmue = () => {
     const Y = useTransform(scrollY,[0,1000],[-700,0])
     const LY = useTransform(scrollY,[0,1000],[900,0])
     const PO = useTransform(scrollY,[0,650,700],[0,0.5,1])
-    console.log(scrollY.current)
   return (
     <div id='Resmue' className=' overflow-y-hidden relative bg-resume w-full h-[110%] md:w-full md:h-full bg-cover bg-no-repeat after:absolute after:w-full after:h-[120%] after:md:w-full md:after:h-full after:bg-black after:opacity-[0.9] after:z-0 '>
         <div className='pt-[80px] absolute w-full z-10'>
