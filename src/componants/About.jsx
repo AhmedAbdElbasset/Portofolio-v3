@@ -7,7 +7,7 @@ const About = () => {
   const IX = useTransform(scrollY,[0,600],[600,0])
   const PO = useTransform(scrollY,[0,500,600],[0,0.5,1])
   return (
-    <div id='About' className=' flex flex-wrap pb-[80px] mt-[20px] max-w-max'>
+    <div id='About' className=' overflow-hidden relative flex flex-wrap pb-[80px] mt-[20px] max-w-max'>
       <div className='container'>
       <div className=' relative flex flex-col-reverse sm:flex-row max-w-max '>
           <motion.div style={{x:PX,opacity:PO}} className='text-white relative pl-[5%] sm:left-[5%]'>
