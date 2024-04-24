@@ -7,16 +7,13 @@ import react from '../../public/assets/icons8-react-60.png'
 import { motion,useScroll,useTransform } from 'framer-motion'
 const Resmue = () => {
     const{scrollY}=useScroll()
-    const Scale = useTransform(scrollY,[0,500,700],[0,1.5,1])
-    const Y = useTransform(scrollY,[0,1000],[-700,0])
-    const LY = useTransform(scrollY,[0,1000],[900,0])
-    const PO = useTransform(scrollY,[0,650,700],[0,0.5,1])
+    const OPa =useTransform(scrollY,[750,950],[0,1])
   return (
-    <div id='Resmue' className=' overflow-y-hidden relative bg-resume w-full h-[110%] md:w-full md:h-full bg-cover bg-no-repeat after:absolute after:w-full after:h-[120%] after:md:w-full md:after:h-full after:bg-black after:opacity-[0.9] after:z-0 '>
+    <motion.div id='Resmue' style={{opacity:OPa}} className=' overflow-y-hidden relative bg-resume w-full h-[160%] md:w-full md:h-full bg-cover bg-no-repeat after:absolute after:w-full after:h-[120%] after:md:w-full md:after:h-full after:bg-black after:opacity-[0.9] after:z-0 '>
         <div className='pt-[80px] absolute w-full z-10'>
             <div className='container'>
                 <div className=' flex flex-col  sm:justify-between lg:justify-around sm:flex-row w-full h-full items-center'>
-                    <motion.div style={{y:Y,opacity:PO}} className=' w-full sm:w-[30%] h-full sm:h-[30%] flex flex-col text-white'>
+                    <div  className=' w-full sm:w-[30%] h-full sm:h-[30%] flex flex-col text-white'>
                         <p className='main-p max-w-max'>Software skills</p>
                         <span className='main'/>
                         <div className=' relative left-[10%]  mt-[20px] max-w-max'>
@@ -46,8 +43,8 @@ const Resmue = () => {
                                 <span className='before:w-[10px] before:h-[10px] before:rounded-[50%] before:flex before:bg-white before:relative before:left-[-200%] before:top-[36%] after:flex after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-[50%] after:relative after:top-[3px] after:left-[-225%] after:border-[1px] border-white' />
                             </div>
                         </div>
-                    </motion.div>
-                    <motion.div style={{y:LY,opacity:PO}} className='text-white relative left-[-70px] sm:left-0 py-[50px] h-[120%] sm:py-0  '>
+                    </div>
+                    <div  className='text-white relative left-[-70px] sm:left-0 py-[50px] h-[120%] sm:py-0  '>
                         <div className='pb-[30px]' >
                             <p className='main-p '>languages</p>
                             <span className='main w-[130px]'/>
@@ -68,11 +65,11 @@ const Resmue = () => {
                             <p className='text-white ml-[25px] mt-[15px] text-[25px]'>Faculty of Science</p>
                             <span className='text-white text-[15px] font-thin ml-[25px] tracking-[1px] capitalize'>helwan university</span>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -61,7 +61,7 @@ import { motion,useScroll,useTransform } from "framer-motion"
 // Import Swiper styles
 const Portofolio = () => {
     const{scrollY}=useScroll()
-    const PX = useTransform(scrollY,[1550,1800,2000,2300],[1200,0,1200,0])
+    const PX = useTransform(scrollY,[1550,1800,2190,2200,2400],[1200,0,0,1200,0])
     const IX = useTransform(scrollY,[0,600],[600,0])
     const sale = useTransform(scrollY,[0,1500,1600],[0,2,1])
     return (
