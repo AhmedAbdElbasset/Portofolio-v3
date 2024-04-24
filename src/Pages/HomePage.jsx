@@ -3,13 +3,21 @@ import Header from '../componants/Header'
 import About from '../componants/About'
 import Resmue from '../componants/Resmue'
 import Portofolio from '../componants/Portofolio'
+import { useEffect,useState } from 'react'
 const HomePage = () => {
+  const [scroll,setScroll]=useState(0)
+  useEffect(()=>{
+    window.onscroll=function(){
+      setScroll(this.scrollY)
+    }
+  })
+  console.log(scroll)
   return (
     <div className='w-full h-full'>
-      <Header/>
-      <Landing/>
-      <About/>
-      <Resmue/>
+      <Header scroll={scroll}/>
+      <Landing scroll={scroll} />
+      <About scroll={scroll}/>
+      <Resmue scroll={scroll}/>
       <div className="w-full h-[80px] bg-main text-white flex justify-around mt-[80px] ">
         <div className="relative top-[15px] sm:top-[5px]">
           <p className='text-[16px] sm:text-[23px] font-bold capitalize'>want work to with me</p>
@@ -17,7 +25,7 @@ const HomePage = () => {
         </div>
         <a href="https://www.linkedin.com/feed/" target='_blank ' className='relative my-auto bg-white p-2 sm:p-3 text-main capitalize rounded-[5px] font-medium transition-all duration-500 hover:drop-shadow-lg hover:scale-[1.1] '>hire me</a>
       </div>
-      <Portofolio/>
+      <Portofolio />
     </div>
   )
 }
