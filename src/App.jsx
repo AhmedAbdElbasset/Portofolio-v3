@@ -1,15 +1,18 @@
 import HomePage from "./Pages/HomePage";
 import AnimatedCursor from "react-animated-cursor";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import Loader from "./componants/loader/Loader";
 export default function App() {
   const[load,setLoading]=useState(true)
+useEffect(()=>{
   window.onload=()=>{
     setTimeout(()=>{
-      setLoading(prevstate=>!prevstate)
+      setLoading(prevState=>!prevState)
     },1500)
   }
+},[])
+  
   return (
     <>
       <AnimatedCursor
