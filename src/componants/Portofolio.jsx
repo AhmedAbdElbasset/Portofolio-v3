@@ -61,11 +61,11 @@ import { motion,useScroll,useTransform } from "framer-motion"
 // Import Swiper styles
 const Portofolio = () => {
     const{scrollY}=useScroll()
-    const PX = useTransform(scrollY,[1550,1800,2190,2200,2400],[1200,0,0,1200,0])
+    const PX = useTransform(scrollY,[1550,1800,2190,2200,2580],[1200,0,0,1200,0])
     const IX = useTransform(scrollY,[0,600],[600,0])
     const sale = useTransform(scrollY,[0,1500,1600],[0,2,1])
     return (
-        <div id="Portofolio" className=" overflow-x-hidden w-full h-[214%] sm:h-[224%] md:h-[120%] text-white overflow-auto relative mt-[20px] sm:mt-[80px] ">
+        <div id="Portofolio" className=" overflow-x-hidden w-full h-[154%] sm:h-[214%] md:h-[120%] text-white overflow-auto relative mt-[20px] sm:mt-[80px] ">
             <div className="container mx-auto">
                 <motion.p style={{scale:sale}} className="main-head ml-[20%] sm:ml-[40%] before:w-[200px] pb-[50px]">Portofolio</motion.p>
                     <motion.div style={{x:PX}} className=" hidden md:flex">
