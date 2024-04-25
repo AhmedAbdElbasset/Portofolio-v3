@@ -4,15 +4,6 @@ import { useState,useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import Loader from "./componants/loader/Loader";
 export default function App() {
-  const[load,setLoading]=useState(true)
-useEffect(()=>{
-  window.onload=()=>{
-    setTimeout(()=>{
-      setLoading(prevState=>!prevState)
-    },1500)
-  }
-},[])
-  
   return (
     <>
       <AnimatedCursor
@@ -41,9 +32,9 @@ useEffect(()=>{
           "button",
           ".link",
         ]}
-      />{
-        load?<Loader/>:<HomePage/>
-      }
+      />
+        <HomePage/>
+      
     </>
   );
 }
