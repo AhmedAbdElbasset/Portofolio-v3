@@ -2,7 +2,14 @@ import HomePage from "./Pages/HomePage";
 import AnimatedCursor from "react-animated-cursor";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import Loader from "./componants/loader/Loader";
 export default function App() {
+  const[load,setLoading]=useState(true)
+  window.onload=()=>{
+    setTimeout(()=>{
+      setLoading(prevstate=>!prevstate)
+    },1500)
+  }
   return (
     <>
       <AnimatedCursor
@@ -31,8 +38,9 @@ export default function App() {
           "button",
           ".link",
         ]}
-      />
-        <HomePage />
+      />{
+        load?<Loader/>:<HomePage/>
+      }
     </>
   );
 }
