@@ -10,7 +10,7 @@ const sliderData=[
         title:'elzero Project',
         img:Elzero,
         link:'https://ahmedabdelbasset.github.io/Elzero/',
-        code:'https://ahmedabdelbasset.github.io/Elzero',
+        code:'https://github.com/AhmedAbdElbasset/Elzero',
         used:'html css'
 
     },
@@ -19,7 +19,7 @@ const sliderData=[
         title:'elzero dashboared',
         img:Dash,
         link:' https://ahmedabdelbasset.github.io/Elzero2',
-        code:' https://ahmedabdelbasset.github.io/Elzero2/',
+        code:' https://github.com/AhmedAbdElbasset/Elzero2/',
         used:'html css'
 
     },
@@ -28,7 +28,7 @@ const sliderData=[
         title:'hard rock store',
         img:HardROck,
         link:'https://ahmedabdelbasset.github.io/Hard-Rock/',
-        code:'https://ahmedabdelbasset.github.io/Hard-Rock',
+        code:'https://github.com/AhmedAbdElbasset/Hard-Rock',
         used:'html css react'
 
     },
@@ -37,7 +37,7 @@ const sliderData=[
         title:'moviex store',
         img:Moviex,
         link:'https://ahmedabdelbasset.github.io/Moviex/',
-        code:'https://ahmedabdelbasset.github.io/Moviex',
+        code:'https://github.com/AhmedAbdElbasset/Moviex',
         used:'html css react framer motion'
 
     },
@@ -46,7 +46,7 @@ const sliderData=[
         title:'Portofolio',
         img:Por,
         link:'https://ahmedabdelbasset.github.io/Portofolio/',
-        code:'https://ahmedabdelbasset.github.io/Portofolio',
+        code:'https://github.com/AhmedAbdElbasset/Portofolio',
         used:'html css react '
 
     }
